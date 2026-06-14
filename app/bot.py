@@ -13,10 +13,6 @@ TOKEN = "vk1.a.yIy9ZjXc_H4zSlFvqP3n-JnHA6PwW7tC5Se4w3AqrdCcCfjy3YY0U-fOfTwSJAArS
 bot = Bot(token=TOKEN)
 db = Database()
 
-# Подключаемся к БД
-db.connect()
-print("Подключение к PostgreSQL установлено")
-
 # Регистрируем обработчики
 register_main_handlers(bot, db)
 register_svo_handlers(bot, db)
